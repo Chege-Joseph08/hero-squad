@@ -37,7 +37,7 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
-    
+
 //new squad route (form)
     get("/squads/new", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
@@ -54,14 +54,6 @@ public class App {
       }, new VelocityTemplateEngine());
 
 
-//Individual squad object route
-    get("/squads/:id", (request, response) -> {
-          Map<String, Object> model = new HashMap<String, Object>();
-          Squad squad = Squad.find(Integer.parseInt(request.params(":id")));
-          model.put("squad", squad);
-          model.put("template", "templates/squad.vtl");
-          return new ModelAndView(model, layout);
-        }, new VelocityTemplateEngine());
   
   }
 }

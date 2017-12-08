@@ -20,5 +20,13 @@ public class SquadTest {
     Squad testSquad = new Squad("testSquad", "Yoga");
     assertEquals("Yoga", testSquad.getCause());
   }
+
+  @Test
+    public void getId_SquadsInstantiateWithAnId_1() {
+     Squad.clear();
+     Squad testSquad = new Squad("testSquad", "Yoga");
+    assertEquals(1, testSquad.getId());
+  }
+
   
   }
