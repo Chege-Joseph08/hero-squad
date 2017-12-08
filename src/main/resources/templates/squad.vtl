@@ -1,0 +1,18 @@
+<h1>$squad.getName() Squad</h1>
+
+<h3>This is our reason:</h3>
+<h4>$squad.getReason()</h4>
+
+<div class="row">
+
+        <h5><a href="/squads/$squad.getId()/heroes/new">Join Us</a></h5>
+
+
+        <h3>Here are some of our members</h3>
+        <ol>
+
+          #foreach ($hero in $squad.getHeroes())
+             <li><h5><a href="/heroes/$hero.getId()">$hero.getName()</a></h5></li>
+          #end
+        </ol>
+    </div>
