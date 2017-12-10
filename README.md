@@ -21,7 +21,7 @@ An app that allows you to recruit a well-balanced team of superheroes
 **Setup and installation**
 Open terminal and type the following commands:
 ```
-$ git clone https://github.com/d-kahara/hero-Squad
+$ clone or Download
 $ cd squad
 $ gradle run
 open http://localhost:4567
